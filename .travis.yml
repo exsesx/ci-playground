@@ -1,0 +1,8 @@
+language: go
+go:
+  - 1.15.x
+script:
+  - go version
+  - go mod download
+  - go build -v ./...
+  - go test -v -race ./...

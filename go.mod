@@ -1,4 +1,4 @@
-module circle-ci-demo
+module go-ci-example
 
 go 1.15
 

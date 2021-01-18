@@ -1,7 +1,7 @@
 package main
 
 import (
-	"circle-ci-demo/server"
+	"go-ci-example/server"
 )
 
 func main() {

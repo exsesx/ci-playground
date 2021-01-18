@@ -1,8 +1,8 @@
 # Circle CI + GitHub Actions + Travis CI Demo
 
-[![Circle CI](https://circleci.com/gh/exsesx/circle-ci-demo.svg?style=svg)](https://circleci.com/gh/exsesx/circle-ci-demo)
-[![GitHub Actions](https://github.com/exsesx/circle-ci-demo/workflows/Go/badge.svg)](https://google.com)
-[![Travis CI](https://travis-ci.com/exsesx/circle-ci-demo.svg?branch=main)](https://travis-ci.com/exsesx/circle-ci-demo)
+[![Circle CI](https://circleci.com/gh/exsesx/go-ci-example.svg?style=svg)](https://circleci.com/gh/exsesx/go-ci-example)
+[![GitHub Actions](https://github.com/exsesx/go-ci-example/workflows/Go/badge.svg)](https://github.com/exsesx/go-ci-example/actions)
+[![Travis CI](https://travis-ci.com/exsesx/go-ci-example.svg?branch=main)](https://travis-ci.com/exsesx/go-ci-example)
 
 This is a golang test web application that does essentially nothing and was created for educational purposes.
 

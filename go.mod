@@ -1,4 +1,4 @@
-module go-ci-example
+module ci-playground
 
 go 1.15
 

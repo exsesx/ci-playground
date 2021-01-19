@@ -1,8 +1,8 @@
 package server
 
 import (
+	"ci-playground/controllers"
 	"github.com/gin-gonic/gin"
-	"go-ci-example/controllers"
 )
 
 func NewRouter() *gin.Engine {

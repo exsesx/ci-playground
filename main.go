@@ -1,7 +1,7 @@
 package main
 
 import (
-	"go-ci-example/server"
+	"ci-playground/server"
 )
 
 func main() {

@@ -5,5 +5,9 @@ import (
 )
 
 func main() {
-	server.Init()
+	err := server.Init()
+
+	if err != nil {
+		panic("The server failed to start up")
+	}
 }

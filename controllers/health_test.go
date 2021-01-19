@@ -2,6 +2,7 @@ package controllers
 
 import (
 	"github.com/gin-gonic/gin"
+	"github.com/stretchr/testify/assert"
 	"net/http"
 	"net/http/httptest"
 	"testing"
@@ -18,11 +19,6 @@ func TestHealthController_Status(t *testing.T) {
 	healthController := HealthController{}
 	healthController.Status(ctx)
 
-	if w.Code != http.StatusOK {
-		t.Fail()
-	}
-
-	if w.Body.String() != StatusResult {
-		t.Fail()
-	}
+	assert.Equal(t, http.StatusOK, w.Code)
+	assert.Equal(t, StatusResult, w.Body.String())
 }

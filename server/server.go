@@ -1,10 +1,7 @@
 package server
 
-func Init() {
+func Init() (err error) {
 	r := NewRouter()
-	err := r.Run(":8000")
 
-	if err != nil {
-		panic("The server failed to start up")
-	}
+	return r.Run(":8000")
 }

@@ -5,8 +5,8 @@ import (
 	"net/http"
 )
 
-type HealthController struct{}
+type RootController struct{}
 
-func (h HealthController) Status(c *gin.Context) {
+func (h RootController) Status(c *gin.Context) {
 	c.String(http.StatusOK, "Working!")
 }

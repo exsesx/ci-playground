@@ -10,9 +10,9 @@ func NewRouter() *gin.Engine {
 	router.Use(gin.Logger())
 	router.Use(gin.Recovery())
 
-	health := new(controllers.HealthController)
+	rootController := new(controllers.RootController)
 
-	router.GET("/health", health.Status)
+	router.GET("/", rootController.Status)
 
 	return router
 }

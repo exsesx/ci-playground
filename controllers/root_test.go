@@ -10,14 +10,14 @@ import (
 
 const StatusResult = "Working!"
 
-func TestHealthController_Status(t *testing.T) {
+func TestRootController_Status(t *testing.T) {
 	gin.SetMode(gin.TestMode)
 
 	w := httptest.NewRecorder()
 	ctx, _ := gin.CreateTestContext(w)
 
-	healthController := HealthController{}
-	healthController.Status(ctx)
+	rootController := RootController{}
+	rootController.Status(ctx)
 
 	assert.Equal(t, http.StatusOK, w.Code)
 	assert.Equal(t, StatusResult, w.Body.String())

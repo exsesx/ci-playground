@@ -8,7 +8,7 @@ import (
 	"testing"
 )
 
-const HealthCheckResult = "Working!"
+const RootStatus = "Working!"
 
 func performRequest(r http.Handler, method, path string) *httptest.ResponseRecorder {
 	req, _ := http.NewRequest(method, path, nil)
@@ -17,14 +17,14 @@ func performRequest(r http.Handler, method, path string) *httptest.ResponseRecor
 	return w
 }
 
-func TestHealthCheck(t *testing.T) {
+func TestRootEndpoint(t *testing.T) {
 	gin.SetMode(gin.TestMode)
 
 	router := NewRouter()
-	w := performRequest(router, "GET", "/health")
+	w := performRequest(router, "GET", "/")
 
 	assert.Equal(t, http.StatusOK, w.Code)
-	assert.Equal(t, HealthCheckResult, w.Body.String())
+	assert.Equal(t, RootStatus, w.Body.String())
 }
 
 func TestNewRouter(t *testing.T) {
